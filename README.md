@@ -14,6 +14,15 @@ Source and releases: https://github.com/svchostexe/pagemaster-revised-edition
 
 Tested in Mesen. This repository contains no game data, only the changes.
 
+### v3: Dead Letter Office (optional, newer)
+
+[`patch/pagemaster-dead-letter-office-v3.ips`](patch/pagemaster-dead-letter-office-v3.ips) applies to the same US ROM and **includes everything above**. Use it instead of the Revised Edition patch, not on top of it. Patched SHA-1: `342cee16c67a4abec565618a7d8da60225568dcd`.
+
+- New Horror World bonus stage, **DEAD LETTER OFFICE**, replacing "The Bonus Chamber" (same slot, so level progression is untouched). New room decoration and barred alcoves, about 34 collectibles moved, original collision kept. It reuses the Horror graphics and mechanics. Its map and object data is RNC-compressed (5,450 to 2,077 bytes).
+- CHEATS level select fix: PLAY now clears the sound-module cache (`$0545`) so the stock loader always reloads the right music. In a headless Mesen test, with the cache forced to the target level's value, the Revised Edition build skipped the music upload on all four warps (Horror, Adventure, Fantasy, Horror) and v3 uploaded on all four.
+- Checked statically only: the checksum is valid, all 342 RNC blocks decompress and CRC clean, and the 65 level-select entries and their name pointers are consistent. The new level has not been playtested yet.
+
+
 ## What's changed
 
 **Fairer gameplay**
