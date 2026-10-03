@@ -2,6 +2,8 @@
 
 An IPS patch for the US version of *The Pagemaster* (SNES, 1994) that fixes its roughest edges and adds a few extras.
 
+Source and releases: https://github.com/svchostexe/pagemaster-revised-edition
+
 ![Title screen: the stamp next to the finished banner](images/title-stamp.png)
 
 ## Patching
